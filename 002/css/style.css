@@ -1,0 +1,63 @@
+body, h4, h5, p{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #eee;
+    
+}
+h4 {
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    color: #fff;
+}
+h5 {
+    padding: 5px 0;
+    text-align: center;
+}
+.panel {
+    overflow: hidden;
+    width: 390px;
+    border: 2px solid rgb(29, 64, 128);
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    background: #99CCFF;
+}
+.wrap {
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.678)
+}
+.wrap:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.person {
+    width: 158px;
+    float: left;
+}
+.person img {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+}
+.detail-wrap {
+    position: relative;
+    text-align: center;
+    margin-left: 158px;
+}
+.detail {
+    height: 185px;
+}
+.detail p {
+    padding: 5px 0;
+}
+.detail p span {
+    color: rgba(231, 127, 67, 0.932);
+    font-size: 20px;
+}
+.detail .uint {
+    font-size: 14px;
+}
