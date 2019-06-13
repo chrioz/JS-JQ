@@ -1,0 +1,45 @@
+body, p, h4{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #eee;
+}
+h4 {
+    font-size: 24px;
+}
+table {
+    margin: 50px auto 0;
+    border-collapse: collapse;
+}
+ tr, td {
+    font-size: 20px;
+    border: 1px solid rgb(241, 236, 236);
+}
+td {
+    padding: 0 10px;
+}
+.blackboard {
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 1200px;
+    height: 450px;
+    
+    border: 10px solid rgb(182, 141, 31);
+    box-shadow: 4px 4px 10px #000;
+}
+.blackboard .bg {
+    height: 100%;
+    background: url(../img/bg.jpg) no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 8px #000 inset;
+}
+.blackboard .content {
+    padding: 10px;
+    color: #fff;
+}
+.blackboard .content h4{
+    text-align: center;
+    margin-bottom: 5px;
+    
+}
