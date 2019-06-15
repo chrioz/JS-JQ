@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h4 class="title">购物清单</h4>
+        </div>
+        <div class="main">
+            <form action="" id="shop-list">
+                <fieldset id="field">
+                    <legend>目的地&nbsp;&&nbsp;时间</legend>
+                    <div class="direc wrap">
+                        <i class="icon market"></i>
+                        <input id="direction" type="text" placeholder="超市">
+                    </div>
+                    <div class="time wrap">
+                        <i class="icon clock"></i>
+                        <input id="tim" type="date">
+                    </div>
+                </fieldset>
+                <ul id="detail-list" class="detail"></ul>
+                <div class="add-wrap">
+                    <input id="item-ipt" type="text">
+                    <input id="add-btn" class="btn" type="button" value="添加">
+                </div>
+            </form>
+        </div>
+        <div class="footer">
+            <div class="print-wrap">
+                <div class="print">
+                    <input type="button" id="printBtn">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/demo.js"></script>
+</body>
+
+</html>
