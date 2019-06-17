@@ -30,36 +30,28 @@
         var target = getTarget(e);
         // 判断触发事件元素是否是a标签
         if(target.tagName === 'A'){
+            // 清除背景色
+            for (var i=0; i<arrLinkLength; i++) {
+                arrLink[i].style.backgroundColor = '';
+            }
+            // 更改图片地址
             var title = target.title;
             var source = target.href;
             var placeholder = document.getElementById('placeholder');
-            placeholder.src = source;
+            placeholder.setAttribute('src', source);
             placeholder.alt = title;
+            // 设置背景色
+            target.style.backgroundColor = '#eee';
         }
-    }
-    // 定义函数，清除背景色
-    function clearBg()  {
-        for (var i=0; i<arrLinkLength; i++) {
-            arrLink[i].style.backgroundColor = '';
-        }
-    }
-    // 定义函数，选中项背景色
-    function bg(e) {
-        var target = getTarget(e);
-        target.style.backgroundColor = '#eee';
     }
     // 事件委托
     if(nav.addEventListener) {
         nav.addEventListener('click', function(e) {
-            clearBg();
             change(e);
-            bg(e);
         }, false);
     } else {
         nav.attachEvent('onclick',  function(e) {
-            clearBg();
             change(e);
-            bg(e);
         });
     }
 }());

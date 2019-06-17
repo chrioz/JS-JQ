@@ -32,11 +32,10 @@ a {
     border-radius: 10px;
     overflow: hidden;
 }
-.nav li {
-    border-bottom: 1px solid rgb(218, 230, 235);
-}
 .nav li a {
+    line-height: 50px;
     width: 100%;
+    border-bottom: 1px solid rgb(218, 230, 235);
 }
 .nav li a:active {
     background: #eee;
