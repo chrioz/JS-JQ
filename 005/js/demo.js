@@ -35,11 +35,11 @@
                 arrLink[i].style.backgroundColor = '';
             }
             // 更改图片地址
-            var title = target.title;
-            var source = target.href;
+            var title = target.getAttribute('title');
+            var source = target.getAttribute('href');
             var placeholder = document.getElementById('placeholder');
             placeholder.setAttribute('src', source);
-            placeholder.alt = title;
+            placeholder.setAttribute('alt', title);
             // 设置背景色
             target.style.backgroundColor = '#eee';
         }
