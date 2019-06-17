@@ -1,0 +1,52 @@
+body, ul, li {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #eee;
+}
+ul, li {
+    list-style: none;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+}
+.wrapper {
+    position: relative;
+    width: 400px;
+    box-shadow: 1px 1px 3px rgb(89, 169, 204);
+    margin: 0 auto;
+    margin-top: 100px;
+    
+    overflow: hidden;
+    border-radius: 10px;
+}
+.nav {
+    background: #fff;
+    text-align: center;
+    width: 24%;
+    float: left;
+    border-right: 1px solid rgb(218, 230, 235);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.nav li {
+    border-bottom: 1px solid rgb(218, 230, 235);
+}
+.nav li a {
+    width: 100%;
+}
+.nav li a:active {
+    background: #eee;
+}
+.show {
+    width: 75%;
+    float: right;
+    text-align: right;
+    font-size: 0;
+}
+.show img {
+    border-radius: 10px;
+}
