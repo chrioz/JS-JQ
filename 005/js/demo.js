@@ -1,4 +1,6 @@
+
 (function() {
+    // 问题：加载页面不能立刻更新样式，待研究
     // 操作样式, 左侧列表自适应高度
     var nav = document.getElementsByClassName('nav')[0];
     var show = document.getElementsByClassName('show')[0];
@@ -26,11 +28,14 @@
     // 定义函数，更改占位图片src
     function change(e) {
         var target = getTarget(e);
-        var title = target.title;
-        var source = target.href;
-        var placeholder = document.getElementById('placeholder');
-        placeholder.src = source;
-        placeholder.alt = title;
+        // 判断触发事件元素是否是a标签
+        if(target.tagName === 'A'){
+            var title = target.title;
+            var source = target.href;
+            var placeholder = document.getElementById('placeholder');
+            placeholder.src = source;
+            placeholder.alt = title;
+        }
     }
     // 定义函数，清除背景色
     function clearBg()  {
