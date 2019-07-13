@@ -1,0 +1,51 @@
+body, html, ul, li {    
+    margin: 0;
+    padding: 0;
+}
+ul, li {
+    list-style: none;
+}
+img {
+    display: block;
+}
+.wrapper{
+    background-color: #eee;
+    position: relative;
+    width: 300px;
+    height: 330px;
+    margin: 100px auto;
+    box-shadow: 1px 1px 5px #333;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.wrapper .box {
+    position: absolute;
+    width: 3000px;
+    margin-left: -5px;
+    left: 0px;
+}
+.wrapper .box li {
+    float: left;
+    margin: 0 5px;
+}
+.wrapper .nav {
+    font-size: 0;
+    position: absolute;
+    bottom: 5px;
+    width: 300px;
+    text-align: center
+}
+.wrapper .nav a {
+    display: inline-block;
+    margin: 0 4px;
+    width: 20px;
+    height: 20px;
+    background: rgb(5, 99, 75);
+    border-radius: 10px;
+    opacity: 0.5;
+    /* ie8 */
+    filter: alpha(opacity=50);
+}
+.wrapper .nav a:hover {
+    background-color: rgb(33, 160, 122);
+}
