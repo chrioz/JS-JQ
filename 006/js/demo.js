@@ -1,6 +1,6 @@
-// 存在问题：
-//  切换第一张，动画时间长
-//  导航切换， 有点混乱
+// 存在问题: 
+//     切换第一张图片，等待时间长
+//     切换导航，setAColor函数有些混乱 
 
 // 获取属性函数
 // 兼容IE
@@ -51,16 +51,15 @@ function bind(obj, eStr, func) {
 // 重置颜色函数
 // 跳过选中
 function setAColor(index) {
-    for(var i=0, j=0; i<picList.length; i++, j++) {
+    for(var i=0, j=0; i<aList.length; i++, j++) {
         if(index == picList.length-1) {
             index = 0;
-            aList[index].style.backgroundColor = 'red';
         }
         if(i == index) {
             aList[index].style.backgroundColor = 'red';
-            console.log(j)
             continue;
         }
+        // console.log(i);
         aList[i].style.backgroundColor = '';
         
     }
